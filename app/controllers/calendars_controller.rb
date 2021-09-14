@@ -41,7 +41,7 @@ class CalendarsController < ApplicationController
 
 
       wday_num =  Date.today.wday + x# wdayメソッドを用いて取得した数値
-      if  wday_num => 7
+      if  wday_num >= 7
         wday_num = wday_num -7
       end
 
